@@ -27,16 +27,7 @@ AFRAME.registerComponent("target-ring", {
     ringEl.setAttribute("position",position);
     ringEl.setAttribute("geometry",{ primitive: "torus",radius: 8 });   
 
-    //set the static body attribute of physics system 
-    ringEl.setAttribute("static-body", {
-      shape: "sphere",
-      sphereRadius: 2
-    });
-
-    ringEl.setAttribute("game-play", {
-      elementId: `#${id}`
-    });
-    
+        
     terrainEl.appendChild(ringEl);
   }
 });
