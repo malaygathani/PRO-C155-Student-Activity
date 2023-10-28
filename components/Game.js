@@ -1,7 +1,10 @@
 AFRAME . registerComponet("game-play",{
     schema :{
         elementld:{type:"sttring",defalut:"#ring1"},
-    },
+},
+    update:function(){
+        this.isCollided(this.data.elementld):
+    }
     isCollided:function(elementld){
         const element = document.querySelector(elementld);
         element.addEventListener("collide",(e)=>{
